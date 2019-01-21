@@ -1,0 +1,12 @@
+- hosts: production
+  tasks:
+    - name: Installs nginx web server
+      action: yum pkg={{item}} state=installed update_cache=true
+      with_items:
+          #- epel-release
+          #epel-release must be installed before nginx
+          - nginx
+          - mariadb
+          - mariadb-server
+          - php-fpm
+          - php-gd
