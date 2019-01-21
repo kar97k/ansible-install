@@ -8,4 +8,4 @@
           - mariadb-server
           - php-fpm
           - php-gd
-        state: present
+        state: latest #absent present

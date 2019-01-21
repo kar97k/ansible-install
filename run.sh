@@ -1,1 +1,1 @@
-ansible-playbook install_lemp.yml 
+ansible-playbook ./install_packets.yml
