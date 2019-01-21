@@ -1,0 +1,11 @@
+- hosts: production
+  tasks:
+    - name: install packets
+      package:
+        name:
+          - nginx
+          - mariadb
+          - mariadb-server
+          - php-fpm
+          - php-gd
+        state: present
