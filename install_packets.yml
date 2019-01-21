@@ -3,9 +3,5 @@
     - name: install packets
       package:
         name:
-          - nginx
-          - mariadb
-          - mariadb-server
-          - php-fpm
-          - php-gd
-        state: latest #absent present
+          - zabbix-agent
+        state: present #latest #absent

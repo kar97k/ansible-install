@@ -1,0 +1,10 @@
+- hosts: production
+  tasks:
+    - name: Copy a new "zabbix-agent.conf" file into place, backing up the original if it differs from the copied version
+      copy:
+        src: ./zabbix_agentd.conf
+        dest: /etc/zabbix/zabbix_agentd.conf
+        owner: root
+        group: root
+        mode: 0644
+        backup: yes
